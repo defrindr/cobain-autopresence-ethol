@@ -1,0 +1,30 @@
+{
+    "name": "presence_pens",
+    "version": "1.0.0",
+    "main": "main.js",
+    "license": "MIT",
+    "dependencies": {
+        "axios": "^0.27.2",
+        "axios-cookiejar-support": "^4.0.1",
+        "qs": "^6.10.3",
+        "tough-cookie": "^4.0.0"
+    },
+    "scripts": {
+        "start": "node main.js"
+    },
+    "author": {
+        "name": "Defri Indra Mahardika",
+        "email": "defrindr@gmail.com"
+    },
+    "description": "A simple library to make presence API calls",
+    "keywords": [
+        "presence",
+        "api",
+        "library"
+    ],
+    "homepage": "https://github.com/defrindr/ethol-autopresence",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/defrindr/ethol-autopresence"
+    }
+}
