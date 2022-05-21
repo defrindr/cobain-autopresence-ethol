@@ -33,6 +33,10 @@ cp credentials.js.sample credentials.js
 nano credentials.js
 ```
 
+### Ubah BASE_PATH pada config/file.js
+
+Ubah BASE_PATH menjadi fullpath dari directory dimana library ini di install
+
 ### Jalankan Bot
 
 ```sh
