@@ -1,4 +1,4 @@
-let BASE_PATH = process.cwd() + "/";
+let BASE_PATH = "/home/koirawa/ethol-autopresence/";
 let TOKEN_PATH = "./temp/token.txt";
 let CREDENTIALS_PATH = "./credentials.json";
 let ETHOL_CONF_PATH = "./temp/ethol.js";

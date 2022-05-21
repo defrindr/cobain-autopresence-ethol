@@ -1,7 +1,7 @@
 const fs = require("fs");
-const { DEBUG_PATH } = require("../config/file");
+const { BASE_PATH, DEBUG_PATH } = require("../config/file");
 const sendWa = require("./send-wa");
-const log_file = fs.createWriteStream(DEBUG_PATH, { flags: "w" });
+const log_file = fs.createWriteStream(BASE_PATH + DEBUG_PATH, { flags: "w" });
 const util = require("util");
 const Config = require("../config");
 
