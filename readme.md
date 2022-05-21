@@ -9,45 +9,38 @@ Adalah sebuah library untuk melakukan presensi otomatis pada [Layanan Ethol](htt
 ## Instalasi
 
 
-### Cloning Repository Ini
+1. Cloning Repository Ini
 
 ```sh
 git clone https://github.com/defrindr/ethol-autopresence
 cd ethol-autopresence
 ```
 
-### Install dependency
+2. Install dependency
 
 ```sh
 yarn install
-```
-atau
-```sh
+#atau
 npm install
 ```
 
-### Copy ```credentials.js.sample``` menjadi ```credentials.js``` dan Atur credentials akun ethol anda
+3. Copy ```credentials.js.sample``` menjadi ```credentials.js``` dan Atur credentials akun ethol anda
 
 ```sh
 cp credentials.js.sample credentials.js
 nano credentials.js
 ```
 
-### Ubah BASE_PATH pada config/file.js
+4. Ubah BASE_PATH pada config/file.js menjadi fullpath dari directory dimana library ini di install
 
-Ubah BASE_PATH menjadi fullpath dari directory dimana library ini di install
 
-### Jalankan Bot
+5. Jalankan Bot
 
 ```sh
 yarn start
-```
-atau
-```sh
+#atau
 npm run start
-```
-atau
-```sh
+#atau
 node main.js
 ```
 
