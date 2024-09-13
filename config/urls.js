@@ -7,11 +7,11 @@ let URL_CEK_NOTIF =
     BASE_URL + "api/notifikasi/mahasiswa-belum-baca";
 let URL_PRESENSI = BASE_URL + "api/presensi/mahasiswa";
 let URL_RIWAYAT_PRESENSI =
-    BASE_URL + "api/presensi/riwayat?kuliah={nomor_matkul}&jenis_schema=2&nomor={nomor_mahasiswa}";
+    BASE_URL + "api/presensi/riwayat?kuliah={nomor_matkul}&jenis_schema=4&nomor={nomor_mahasiswa}";
 let URL_LIST_MATAKULIAH =
     BASE_URL + "api/kuliah?tahun={tahun_aktif}&semester={semester_aktif}";
 let URL_PRESENSI_TERAKHIR =
-    BASE_URL + "api/presensi/terakhir-kuliah?kuliah={matkul}&jenis_schema=2";
+    BASE_URL + "api/presensi/terakhir-kuliah?kuliah={matkul}&jenis_schema=4";
 
 module.exports = {
     BASE_URL,
