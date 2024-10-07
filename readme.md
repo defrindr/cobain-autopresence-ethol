@@ -4,10 +4,7 @@
 
 Adalah sebuah library untuk melakukan presensi otomatis pada [Layanan Ethol](http://ethol.pens.ac.id)
 
-
-
 ## Instalasi
-
 
 1. Cloning Repository Ini
 
@@ -24,7 +21,7 @@ yarn install
 npm install
 ```
 
-3. Copy ```credentials.js.sample``` menjadi ```credentials.js``` dan Atur credentials akun ethol anda
+3. Copy `credentials.js.sample` menjadi `credentials.js` dan Atur credentials akun ethol anda
 
 ```sh
 cp credentials.js.sample credentials.js
@@ -32,7 +29,6 @@ nano credentials.js
 ```
 
 4. Ubah BASE_PATH pada config/file.js menjadi fullpath dari directory dimana library ini di install
-
 
 5. Jalankan Bot
 
@@ -44,9 +40,7 @@ npm run start
 node main.js
 ```
 
-
 ## Todos
 
 - Menambahkan comment di setiap fungsi
 - ...
-
