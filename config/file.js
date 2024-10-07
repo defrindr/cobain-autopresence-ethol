@@ -1,10 +1,11 @@
 const fs = require("fs");
 const writeFile = require("../helpers/write-file");
-const process = require("node:process");
-let BASE_PATH = process.cwd() + "/";
+
+//  eslint-disable-next-line
+let BASE_PATH = __dirname.substring(0, __dirname.length - 6);
 
 let TOKEN_PATH = (email) => {
-  let path = `./temp/token-${email}.txt`;
+  let path = `${BASE_PATH}/temp/token-${email}.txt`;
 
   // if file not exist create it
   if (!fs.existsSync(path)) {
@@ -14,7 +15,7 @@ let TOKEN_PATH = (email) => {
   return path;
 };
 let ETHOL_CONF_PATH = (email) => {
-  let path = `./temp/ethol-${email}.js`;
+  let path = `${BASE_PATH}/temp/ethol-${email}.js`;
 
   // if file not exist create it
   if (!fs.existsSync(path)) {
@@ -23,8 +24,9 @@ let ETHOL_CONF_PATH = (email) => {
   }
   return path;
 };
-let CREDENTIALS_PATH = "./credentials.json";
-let DEBUG_PATH = "./temp/debug.log";
+
+let CREDENTIALS_PATH = BASE_PATH + "/credentials.json";
+let DEBUG_PATH = BASE_PATH + "/temp/debug.log";
 
 module.exports = {
   BASE_PATH,
